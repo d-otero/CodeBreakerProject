@@ -14,7 +14,7 @@ function guess() {
 }
 
 //implement new functions here
-  var setHiddenFields = function() {
+  function setHiddenFields() {
   var answer =  Math.floor(Math.random) * 9999);
   answer.toString();
   while (answer.length < 4) {
@@ -23,11 +23,11 @@ function guess() {
   }
 };
 //END OF setHiddenFields function
-  setMessage = function() {
+  function setMessage() {
     var message = document.getElementById('message').innerHTML;
   };
 //END OF setMessage function
-  validateInput = function(setHiddenFields()) {
+   function validateInput(setHiddenFields()) {
     if (setHiddenFields.length == 4) {
       return true;
     } else {
